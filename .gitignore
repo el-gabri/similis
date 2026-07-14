@@ -1,0 +1,11 @@
+# --- Artefatos do refactor (documentação de trabalho, não usados em runtime) ---
+plan.md
+
+# --- Gerados / caches locais (nunca versionar nem deployar) ---
+__pycache__/
+*.pyc
+.pytest_cache/
+infos.generated.yaml
+/tests/test_synthetics_desodorante.py
+/docs/
+*.bak

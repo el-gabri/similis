@@ -1,0 +1,8205 @@
+list_ids:
+  absorvente_com_abas__absorvente_diurno:
+    subcategory_name: Absorvente com Abas
+    category_name: Absorvente Diurno
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  absorvente_com_abas__absorvente_noturno:
+    subcategory_name: Absorvente com Abas
+    category_name: Absorvente Noturno
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  absorvente_interno__absorvente_diurno:
+    subcategory_name: Absorvente Interno
+    category_name: Absorvente Diurno
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  absorvente_sem_abas__absorvente_diurno:
+    subcategory_name: Absorvente sem Abas
+    category_name: Absorvente Diurno
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  absorvente_sem_abas__absorvente_noturno:
+    subcategory_name: Absorvente sem Abas
+    category_name: Absorvente Noturno
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  absorventes_para_seios__amamentacao:
+    subcategory_name: Absorventes para Seios
+    category_name: Amamentação
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  acessorios_para_coloracao__tonalizante_e_coloracao:
+    subcategory_name: Acessórios para Coloração
+    category_name: Tonalizante e Coloração
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  acessorios_para_maquiagem__maquiagens:
+    subcategory_name: Acessórios para Maquiagem
+    category_name: Maquiagens
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  achocolatado_pronto__bebidas:
+    subcategory_name: Achocolatado Pronto
+    category_name: Bebidas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  achocolatados_e_cia__mercado:
+    subcategory_name: Achocolatados e Cia
+    category_name: Mercado
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  adocante__mercado:
+    subcategory_name: Adoçante
+    category_name: Mercado
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  aerosol__desodorante:
+    subcategory_name: Aerosol
+    category_name: Desodorante
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: desodorante
+    list_columns:
+    - forma_desodorante
+    - genero
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_desodorante:
+        attribute_type: hard_filter
+      genero:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.4
+    - 2.5
+  aerosol_e_spray__desodorante:
+    subcategory_name: Aerosol e Spray
+    category_name: Desodorante
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: desodorante
+    list_columns:
+    - forma_desodorante
+    - genero
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_desodorante:
+        attribute_type: hard_filter
+      genero:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.4
+    - 2.5
+  agua__bebidas:
+    subcategory_name: Água
+    category_name: Bebidas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  agua_de_coco__bebidas:
+    subcategory_name: Água de Coco
+    category_name: Bebidas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  agua_oxigenada_e_boricada__antissepticos:
+    subcategory_name: Água Oxigenada e Boricada
+    category_name: Antissépticos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: agua_terapeutica
+    list_columns:
+    - tipo_agua_terapeutica
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      tipo_agua_terapeutica:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  agua_tonica__bebidas:
+    subcategory_name: Água Tônica
+    category_name: Bebidas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  agulhas__agulhas_e_seringas:
+    subcategory_name: Agulhas
+    category_name: Agulhas e Seringas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  alcool__prevencao_viral:
+    subcategory_name: Álcool
+    category_name: Prevenção  Viral
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  alimentos__mercado:
+    subcategory_name: Alimentos
+    category_name: Mercado
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  alimentos_prontos_congelados__mercado:
+    subcategory_name: Alimentos Prontos Congelados
+    category_name: Mercado
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  alimentos_prontos_e_congelados__mercado:
+    subcategory_name: Alimentos Prontos e Congelados
+    category_name: Mercado
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  alisantes__hidratacao_e_tratamento_capilar:
+    subcategory_name: Alisantes
+    category_name: Hidratação e Tratamento Capilar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  anticaspa_e_antiqueda__shampoo:
+    subcategory_name: Anticaspa e Antiqueda
+    category_name: Shampoo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  anticaspa_e_antiqueda__condicionador:
+    subcategory_name: Anticaspa e Antiqueda
+    category_name: Condicionador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  anticaspa_e_antiqueda__kit_shampoo_e_condicionador:
+    subcategory_name: Anticaspa e Antiqueda
+    category_name: Kit Shampoo e Condicionador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  antissepticos_e_tintura_iodo__antissepticos:
+    subcategory_name: Antissépticos e Tintura Iodo
+    category_name: Antissépticos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  aparelho_e_lamina__depilar_e_barbear:
+    subcategory_name: Aparelho e Lâmina
+    category_name: Depilar e Barbear
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  aparelhos_eletricos:
+    subcategory_name: Aparelhos Elétricos
+    category_name: Aparelhos Elétricos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  artigos_esportivos__casa_e_utilidades:
+    subcategory_name: Artigos Esportivos
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  artigos_religiosos__casa_e_utilidades:
+    subcategory_name: Artigos Religiosos
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  automotivos__casa_e_utilidades:
+    subcategory_name: Automotivos
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  autoteste_de_covid__testes:
+    subcategory_name: Autoteste de Covid
+    category_name: Testes
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  aveias_e_cereais__mercado:
+    subcategory_name: Aveias e Cereais
+    category_name: Mercado
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  babadores__utensilios_para_alimentacao:
+    subcategory_name: Babadores
+    category_name: Utensílios para Alimentação
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: bebe_cuidados
+    list_columns:
+    - audience
+    - faixa_etaria_bebe
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      audience:
+        attribute_type: hard_filter
+      faixa_etaria_bebe:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  balanca__aparelhos_e_monitores:
+    subcategory_name: Balança
+    category_name: Aparelhos e Monitores
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  balas_e_chicletes__mercado:
+    subcategory_name: Balas e Chicletes
+    category_name: Mercado
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  banheira_e_acessorios_para_banho__acessorios_para_bebes:
+    subcategory_name: Banheira e Acessórios para Banho
+    category_name: Acessórios para Bebês
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: bebe_cuidados
+    list_columns:
+    - audience
+    - faixa_etaria_bebe
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      audience:
+        attribute_type: hard_filter
+      faixa_etaria_bebe:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  barra_de_cereal__mercado:
+    subcategory_name: Barra de Cereal
+    category_name: Mercado
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  barra_e_alimentos_proteicos__suplementos:
+    subcategory_name: Barra e Alimentos Proteicos
+    category_name: Suplementos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  baterias_para_monitores__aparelhos_e_monitores:
+    subcategory_name: Baterias para Monitores
+    category_name: Aparelhos e Monitores
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: baterias
+    list_columns:
+    - tipo_bateria
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      tipo_bateria:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  bcaa__suplementos:
+    subcategory_name: BCAA
+    category_name: Suplementos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  bebida_proteica__bebidas:
+    subcategory_name: Bebida Proteica
+    category_name: Bebidas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  bebidas_alcoolicas__bebidas:
+    subcategory_name: Bebidas Alcoólicas
+    category_name: Bebidas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  bebidas_vegetais__bebidas:
+    subcategory_name: Bebidas Vegetais
+    category_name: Bebidas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  biscoito_de_polvilho__mercado:
+    subcategory_name: Biscoito de Polvilho
+    category_name: Mercado
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  biscoitos_e_bolachas_doces__mercado:
+    subcategory_name: Biscoitos e Bolachas Doces
+    category_name: Mercado
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  biscoitos_e_bolachas_salgadas__mercado:
+    subcategory_name: Biscoitos e Bolachas Salgadas
+    category_name: Mercado
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  bola__algodao:
+    subcategory_name: Bola
+    category_name: Algodão
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  bolsa_termica__ortopedico:
+    subcategory_name: Bolsa Térmica
+    category_name: Ortopédico
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  bombinha_tira_leite__amamentacao:
+    subcategory_name: Bombinha Tira-Leite
+    category_name: Amamentação
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  bota_ortopedica__ortopedico:
+    subcategory_name: Bota Ortopédica
+    category_name: Ortopédico
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  branco_e_grisalhos__shampoo:
+    subcategory_name: Branco e Grisalhos
+    category_name: Shampoo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  branco_e_grisalhos__condicionador:
+    subcategory_name: Branco e Grisalhos
+    category_name: Condicionador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  branco_e_grisalhos__kit_shampoo_e_condicionador:
+    subcategory_name: Branco e Grisalhos
+    category_name: Kit Shampoo e Condicionador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  brinquedos__casa_e_utilidades:
+    subcategory_name: Brinquedos
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  bronzeador:
+    subcategory_name: Bronzeador
+    category_name: Bronzeador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  buchas_e_esponjas__banho:
+    subcategory_name: Buchas e Esponjas
+    category_name: Banho
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  cabelo__dermocosmeticos:
+    subcategory_name: Cabelo
+    category_name: Dermocosméticos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  cacheados_e_crespos__condicionador:
+    subcategory_name: Cacheados e Crespos
+    category_name: Condicionador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  cacheados_e_crespos__kit_shampoo_e_condicionador:
+    subcategory_name: Cacheados e Crespos
+    category_name: Kit Shampoo e Condicionador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  cacheados_e_crespos__shampoo:
+    subcategory_name: Cacheados e Crespos
+    category_name: Shampoo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  cacheados_e_ondulados__condicionador:
+    subcategory_name: Cacheados e Ondulados
+    category_name: Condicionador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  cacheados_e_ondulados__hidratacao_e_tratamento_capilar:
+    subcategory_name: Cacheados e Ondulados
+    category_name: Hidratação e Tratamento Capilar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  cacheados_e_ondulados__shampoo:
+    subcategory_name: Cacheados e Ondulados
+    category_name: Shampoo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  cadeiras_e_cadeirao__acessorios_para_bebes:
+    subcategory_name: Cadeiras e Cadeirão
+    category_name: Acessórios para Bebês
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: bebe_cuidados
+    list_columns:
+    - audience
+    - faixa_etaria_bebe
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      audience:
+        attribute_type: hard_filter
+      faixa_etaria_bebe:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  cafes_e_cappuccinos__mercado:
+    subcategory_name: Cafés e Cappuccinos
+    category_name: Mercado
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  calcinha_absorvente__absorvente_diurno:
+    subcategory_name: Calcinha Absorvente
+    category_name: Absorvente Diurno
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  calcio__vitaminas:
+    subcategory_name: Cálcio
+    category_name: Vitaminas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  cama_mesa_e_banho__casa_e_utilidades:
+    subcategory_name: Cama, Mesa e Banho
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  carrinhos__acessorios_para_bebes:
+    subcategory_name: Carrinhos
+    category_name: Acessórios para Bebês
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: bebe_cuidados
+    list_columns:
+    - audience
+    - faixa_etaria_bebe
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      audience:
+        attribute_type: hard_filter
+      faixa_etaria_bebe:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  cercadinho__acessorios_para_bebes:
+    subcategory_name: Cercadinho
+    category_name: Acessórios para Bebês
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: bebe_cuidados
+    list_columns:
+    - audience
+    - faixa_etaria_bebe
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      audience:
+        attribute_type: hard_filter
+      faixa_etaria_bebe:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  cerveja_sem_alcool__bebidas:
+    subcategory_name: Cerveja Sem Álcool
+    category_name: Bebidas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  cesta_de_alimentos__mercado:
+    subcategory_name: Cesta de Alimentos
+    category_name: Mercado
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  cha__mercado:
+    subcategory_name: Chá
+    category_name: Mercado
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  cha_pronto__bebidas:
+    subcategory_name: Chá Pronto
+    category_name: Bebidas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  chaceados_e_ondulados__kit_shampoo_e_condicionador:
+    subcategory_name: Chaceados e Ondulados
+    category_name: Kit Shampoo e Condicionador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  chip_de_celular__casa_e_utilidades:
+    subcategory_name: Chip de Celular
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  chupetas__acessorios_para_bebes:
+    subcategory_name: Chupetas
+    category_name: Acessórios para Bebês
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: bebe_cuidados
+    list_columns:
+    - audience
+    - faixa_etaria_bebe
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      audience:
+        attribute_type: hard_filter
+      faixa_etaria_bebe:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  cinta_e_meia_de_compressao__ortopedico:
+    subcategory_name: Cinta e Meia de Compressão
+    category_name: Ortopédico
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  colageno__vitaminas:
+    subcategory_name: Colágeno
+    category_name: Vitaminas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  coletor_menstrual__absorvente_diurno:
+    subcategory_name: Coletor Menstrual
+    category_name: Absorvente Diurno
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  colonia_e_perfumes_infantis__cuidados_com_a_pele:
+    subcategory_name: Colônia e Perfumes Infantis
+    category_name: Cuidados com a Pele
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  coloracao__tonalizante_e_coloracao:
+    subcategory_name: Coloração
+    category_name: Tonalizante e Coloração
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  coloracao_permanente__tonalizante_e_coloracao:
+    subcategory_name: Coloração Permanente
+    category_name: Tonalizante e Coloração
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  coloracao_temporaria__tonalizante_e_coloracao:
+    subcategory_name: Coloração Temporária
+    category_name: Tonalizante e Coloração
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  comemoracoes_e_eventos__casa_e_utilidades:
+    subcategory_name: Comemorações e Eventos
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  condicionador_infantil__cuidados_com_o_cabelo:
+    subcategory_name: Condicionador Infantil
+    category_name: Cuidados com o Cabelo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  controle_de_pragas__casa_e_utilidades:
+    subcategory_name: Controle de Pragas
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  copos_e_garrafas__utensilios_para_alimentacao:
+    subcategory_name: Copos e Garrafas
+    category_name: Utensílios para Alimentação
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  corpo__dermocosmeticos:
+    subcategory_name: Corpo
+    category_name: Dermocosméticos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  corpo__protecao_solar:
+    subcategory_name: Corpo
+    category_name: Proteção Solar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  corpo__maquiagens:
+    subcategory_name: Corpo
+    category_name: Maquiagens
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  cortadores_e_lixas__esmalteria:
+    subcategory_name: Cortadores e Lixas
+    category_name: Esmalteria
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  creme__desodorante:
+    subcategory_name: Creme
+    category_name: Desodorante
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: desodorante
+    list_columns:
+    - forma_desodorante
+    - genero
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_desodorante:
+        attribute_type: hard_filter
+      genero:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.4
+    - 2.5
+  creme_e_gel_dental__higiene_oral:
+    subcategory_name: Creme e Gel Dental
+    category_name: Higiene Oral
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: higiene_oral
+    list_columns:
+    - fluor
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      fluor:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  creme_e_gel_dental_infantil__higiene_bucal:
+    subcategory_name: Creme e Gel Dental Infantil
+    category_name: Higiene Bucal
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: higiene_oral
+    list_columns:
+    - fluor
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      fluor:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  creme_para_assaduras__troca_de_fralda:
+    subcategory_name: Creme para Assaduras
+    category_name: Troca de Fralda
+    top_k: 100
+    min_score: 0.51
+    list_columns:
+    - audience
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - shortName
+    config_overrides:
+      audience:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+  creme_para_pentear_e_leave_in__hidratacao_e_tratamento_capilar:
+    subcategory_name: Creme para Pentear e Leave-in
+    category_name: Hidratação e Tratamento Capilar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  cremes_e_gel_para_cabelos_infantis__cuidados_com_o_cabelo:
+    subcategory_name: Cremes e Gel para Cabelos Infantis
+    category_name: Cuidados com o Cabelo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  cremes_para_cuticula__esmalteria:
+    subcategory_name: Cremes para Cutícula
+    category_name: Esmalteria
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  curativos_adesivos__curativos:
+    subcategory_name: Curativos Adesivos
+    category_name: Curativos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  decoracao__casa_e_utilidades:
+    subcategory_name: Decoração
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  decoracao_e_artigos_de_natal__natal:
+    subcategory_name: Decoração e Artigos de Natal
+    category_name: Natal
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  demaquilante__maquiagens:
+    subcategory_name: Demaquilante
+    category_name: Maquiagens
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  depilacao_e_acessorios__depilar_e_barbear:
+    subcategory_name: Depilação e Acessórios
+    category_name: Depilar e Barbear
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  dermocosmeticos_para_maos_e_pes__dermocosmeticos:
+    subcategory_name: Dermocosméticos para Mãos e Pés
+    category_name: Dermocosméticos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  dermocosmeticos_para_o_cabelo__dermocosmeticos:
+    subcategory_name: Dermocosméticos para o Cabelo
+    category_name: Dermocosméticos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  dermocosmeticos_para_o_corpo__dermocosmeticos:
+    subcategory_name: Dermocosméticos para o Corpo
+    category_name: Dermocosméticos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  dermocosmeticos_para_o_rosto__dermocosmeticos:
+    subcategory_name: Dermocosméticos para o Rosto
+    category_name: Dermocosméticos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  descoloracao__tonalizante_e_coloracao:
+    subcategory_name: Descoloração
+    category_name: Tonalizante e Coloração
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  desfrizantes__hidratacao_e_tratamento_capilar:
+    subcategory_name: Desfrizantes
+    category_name: Hidratação e Tratamento Capilar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  desodorante_intimo__cuidado_intimo:
+    subcategory_name: Desodorante Íntimo
+    category_name: Cuidado Íntimo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  desodorizadores_e_aromatizantes__casa_e_utilidades:
+    subcategory_name: Desodorizadores e Aromatizantes
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  dispenser__papel_higienico:
+    subcategory_name: Dispenser
+    category_name: Papel Higiênico
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+  doces_e_chocolates__mercado:
+    subcategory_name: Doces e Chocolates
+    category_name: Mercado
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  doces_e_sobremesas_de_natal__natal:
+    subcategory_name: Doces e Sobremesas de Natal
+    category_name: Natal
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  elasticos_e_presilhas__acessorios_para_cabelo:
+    subcategory_name: Elásticos e Presilhas
+    category_name: Acessórios para Cabelo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  enxaguante_bucal_infantil__higiene_bucal:
+    subcategory_name: Enxaguante Bucal Infantil
+    category_name: Higiene Bucal
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  enxaguante_e_antisseptico_bucal__higiene_oral:
+    subcategory_name: Enxaguante e Antisséptico Bucal
+    category_name: Higiene Oral
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  escova_dental__higiene_oral:
+    subcategory_name: Escova Dental
+    category_name: Higiene Oral
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  escova_dental_infantil__higiene_bucal:
+    subcategory_name: Escova Dental Infantil
+    category_name: Higiene Bucal
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  esfoliante__locoes_hidratantes_e_oleos_corporais:
+    subcategory_name: Esfoliante
+    category_name: Loções, Hidratantes e Óleos Corporais
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  esmalte_e_base__esmalteria:
+    subcategory_name: Esmalte e Base
+    category_name: Esmalteria
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  esparadrapos_e_micropore__curativos:
+    subcategory_name: Esparadrapos e Micropore
+    category_name: Curativos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  feminino__colonia_e_perfume:
+    subcategory_name: Feminino
+    category_name: Colônia e Perfume
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  fio_e_fita_dental__higiene_oral:
+    subcategory_name: Fio e Fita Dental
+    category_name: Higiene Oral
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  fitas_e_bandagens__curativos:
+    subcategory_name: Fitas e Bandagens
+    category_name: Curativos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  fixador_de_dentadura__higiene_oral:
+    subcategory_name: Fixador de Dentadura
+    category_name: Higiene Oral
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  formula_infantil__alimentacao_infantil:
+    subcategory_name: Fórmula Infantil
+    category_name: Alimentação Infantil
+    top_k: 100
+    min_score: 0.51
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+    quantity_kind: mass
+    list_columns:
+    - categoria_produto
+    - estagio
+    - tipo_formula
+    - lactose
+    - brandName
+    - quantity_norm
+    - packagingName
+    - ageRange
+    - additionalInfo
+    - shortName
+    config_overrides:
+      categoria_produto:
+        attribute_type: hard_filter
+      estagio:
+        attribute_type: hard_filter
+      tipo_formula:
+        attribute_type: hard_filter
+      lactose:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+  fralda_geriatrica__cuidado_intimo:
+    subcategory_name: Fralda Geriátrica
+    category_name: Cuidado Íntimo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: fraldas
+    list_columns:
+    - size_norm
+    - audience
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    - ageRange
+    - diaperSizeWeight
+    - protection
+    - protectionType
+    - hypoallergenic
+    - wetnessIndicator
+    - moistureIndicator
+    config_overrides:
+      size_norm:
+        attribute_type: hard_filter
+      audience:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  fraldas__troca_de_fralda:
+    subcategory_name: Fraldas
+    category_name: Troca de Fralda
+    top_k: 100
+    min_score: 0.51
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+    list_columns:
+    - size_norm
+    - audience
+    - quantity_norm
+    - brandName
+    - shortName
+    - packagingName
+    - additionalInfo
+    - variety
+    - ageRange
+    - closureType
+    - diaperSizeWeight
+    - protection
+    - protectionType
+    - hypoallergenicName
+    - warnings
+    - wetnessIndicator
+    - moistureIndicator
+    config_overrides:
+      size_norm:
+        attribute_type: hard_filter
+      audience:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      primaryMaterial:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+  gaze_e_ataduras__curativos:
+    subcategory_name: Gaze e Ataduras
+    category_name: Curativos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  gel_e_espuma__depilar_e_barbear:
+    subcategory_name: Gel e Espuma
+    category_name: Depilar e Barbear
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  gel_e_fixador_de_cabelo:
+    subcategory_name: Gel e Fixador de Cabelo
+    category_name: Gel e Fixador de Cabelo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  gel_e_stick__desodorante:
+    subcategory_name: Gel e Stick
+    category_name: Desodorante
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: desodorante
+    list_columns:
+    - forma_desodorante
+    - genero
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_desodorante:
+        attribute_type: hard_filter
+      genero:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.4
+    - 2.5
+  glutamina_e_creatina__suplementos:
+    subcategory_name: Glutamina e Creatina
+    category_name: Suplementos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  hastes_flexiveis:
+    subcategory_name: Hastes Flexíveis
+    category_name: Hastes Flexíveis
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  hidratacao__hidratacao_e_tratamento_capilar:
+    subcategory_name: Hidratação
+    category_name: Hidratação e Tratamento Capilar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  hidratacao_e_tratamento_capilar:
+    subcategory_name: Hidratação e Tratamento Capilar
+    category_name: Hidratação e Tratamento Capilar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  hidratantes_para_maos_e_pes__locoes_hidratantes_e_oleos_corporais:
+    subcategory_name: Hidratantes para Mãos e Pés
+    category_name: Loções, Hidratantes e Óleos Corporais
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  hidratantes_para_o_corpo__locoes_hidratantes_e_oleos_corporais:
+    subcategory_name: Hidratantes para o Corpo
+    category_name: Loções, Hidratantes e Óleos Corporais
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  hidratantes_para_o_rosto__locoes_hidratantes_e_oleos_corporais:
+    subcategory_name: Hidratantes para o Rosto
+    category_name: Loções, Hidratantes e Óleos Corporais
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  inaladores_e_umidificadores__aparelhos_e_monitores:
+    subcategory_name: Inaladores e Umidificadores
+    category_name: Aparelhos e Monitores
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  infantil__colonia_e_perfume:
+    subcategory_name: Infantil
+    category_name: Colônia e Perfume
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: bebe_cuidados
+    list_columns:
+    - audience
+    - faixa_etaria_bebe
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      audience:
+        attribute_type: hard_filter
+      faixa_etaria_bebe:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  iogurte_diversos__bebidas:
+    subcategory_name: Iogurte Diversos
+    category_name: Bebidas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: laticinios
+    list_columns:
+    - lactose
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      lactose:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  isotonicos_e_energeticos__bebidas:
+    subcategory_name: Isotônicos e Energéticos
+    category_name: Bebidas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  jardinagem__casa_e_utilidades:
+    subcategory_name: Jardinagem
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  joelheira_e_tornozeleira__ortopedico:
+    subcategory_name: Joelheira e Tornozeleira
+    category_name: Ortopédico
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  kit__agulhas_e_seringas:
+    subcategory_name: Kit
+    category_name: Agulhas e Seringas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  kits__colonia_e_perfume:
+    subcategory_name: Kits
+    category_name: Colônia e Perfume
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  kits_de_maquiagem__maquiagens:
+    subcategory_name: Kits de Maquiagem
+    category_name: Maquiagens
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  kits_para_viagem__banho:
+    subcategory_name: Kits para Viagem
+    category_name: Banho
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  kombuchas__bebidas:
+    subcategory_name: Kombuchas
+    category_name: Bebidas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  labios__maquiagens:
+    subcategory_name: Lábios
+    category_name: Maquiagens
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  leite_em_po__alimentacao_infantil:
+    subcategory_name: Leite em Pó
+    category_name: Alimentação Infantil
+    top_k: 100
+    min_score: 0.7
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+    quantity_kind: mass
+    list_columns:
+    - base_leite
+    - tipo_leite
+    - lactose
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    config_overrides:
+      base_leite:
+        attribute_type: soft_boost
+        boost_factor: 1.3
+      tipo_leite:
+        attribute_type: hard_filter
+      lactose:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+  leite_fermentado__bebidas:
+    subcategory_name: Leite Fermentado
+    category_name: Bebidas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: laticinios
+    list_columns:
+    - lactose
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      lactose:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  leites__bebidas:
+    subcategory_name: Leites
+    category_name: Bebidas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: laticinios
+    list_columns:
+    - lactose
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      lactose:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  lenco_umedecido_intimo__cuidado_intimo:
+    subcategory_name: Lenço Umedecido Íntimo
+    category_name: Cuidado Íntimo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: papel_lenco
+    list_columns:
+    - tipo_lenco
+    - tipo_folha
+    - metragem_norm
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      tipo_lenco:
+        attribute_type: soft_boost
+        boost_factor: 1.2
+      tipo_folha:
+        attribute_type: soft_boost
+        boost_factor: 1.2
+      metragem_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.2
+    quantity_ratio_bounds:
+    - 0.25
+    - 4.0
+  lencos__papel_higienico:
+    subcategory_name: Lenços
+    category_name: Papel Higiênico
+    top_k: 100
+    min_score: 0.51
+    quantity_ratio_bounds:
+    - 0.25
+    - 4.0
+    quantity_kind: count
+    list_columns:
+    - tipo_lenco
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    config_overrides:
+      tipo_lenco:
+        attribute_type: soft_boost
+        boost_factor: 1.2
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.2
+  lencos_de_papel:
+    subcategory_name: Lenços de Papel
+    category_name: Lenços de Papel
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: papel_lenco
+    list_columns:
+    - tipo_lenco
+    - tipo_folha
+    - metragem_norm
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      tipo_lenco:
+        attribute_type: soft_boost
+        boost_factor: 1.2
+      tipo_folha:
+        attribute_type: soft_boost
+        boost_factor: 1.2
+      metragem_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.2
+    quantity_ratio_bounds:
+    - 0.25
+    - 4.0
+  lencos_umedecidos__troca_de_fralda:
+    subcategory_name: Lenços Umedecidos
+    category_name: Troca de Fralda
+    top_k: 100
+    min_score: 0.51
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - primaryMaterial
+    - packaging
+    - alcoholic
+    - returnable
+    - color
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.25
+  limpeza_de_roupas__casa_e_utilidades:
+    subcategory_name: Limpeza de Roupas
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  lisos__shampoo:
+    subcategory_name: Lisos
+    category_name: Shampoo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  lisos__condicionador:
+    subcategory_name: Lisos
+    category_name: Condicionador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  lisos__kit_shampoo_e_condicionador:
+    subcategory_name: Lisos
+    category_name: Kit Shampoo e Condicionador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  loiros_e_coloridos__shampoo:
+    subcategory_name: Loiros e Coloridos
+    category_name: Shampoo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  loiros_e_coloridos__condicionador:
+    subcategory_name: Loiros e Coloridos
+    category_name: Condicionador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  loiros_e_coloridos__kit_shampoo_e_condicionador:
+    subcategory_name: Loiros e Coloridos
+    category_name: Kit Shampoo e Condicionador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  lubrificante__saude_sexual:
+    subcategory_name: Lubrificante
+    category_name: Saúde Sexual
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  mamadeiras__acessorios_para_bebes:
+    subcategory_name: Mamadeiras
+    category_name: Acessórios para Bebês
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: bebe_cuidados
+    list_columns:
+    - audience
+    - faixa_etaria_bebe
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      audience:
+        attribute_type: hard_filter
+      faixa_etaria_bebe:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  manutencao_e_reparo__casa_e_utilidades:
+    subcategory_name: Manutenção e Reparo
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  maos_e_pes__dermocosmeticos:
+    subcategory_name: Mãos e Pés
+    category_name: Dermocosméticos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  maquiagem_para_as_sobrancelhas__maquiagens:
+    subcategory_name: Maquiagem para as Sobrancelhas
+    category_name: Maquiagens
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  maquiagem_para_o_corpo__maquiagens:
+    subcategory_name: Maquiagem para o Corpo
+    category_name: Maquiagens
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  maquiagem_para_o_rosto__maquiagens:
+    subcategory_name: Maquiagem para o Rosto
+    category_name: Maquiagens
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  maquiagem_para_os_labios__maquiagens:
+    subcategory_name: Maquiagem para os Lábios
+    category_name: Maquiagens
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  maquiagem_para_os_olhos__maquiagens:
+    subcategory_name: Maquiagem para os Olhos
+    category_name: Maquiagens
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  mascara__prevencao_viral:
+    subcategory_name: Máscara
+    category_name: Prevenção  Viral
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  mascaras_faciais:
+    subcategory_name: Máscaras Faciais
+    category_name: Máscaras Faciais
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  masculino__colonia_e_perfume:
+    subcategory_name: Masculino
+    category_name: Colônia e Perfume
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  massageador__ortopedico:
+    subcategory_name: Massageador
+    category_name: Ortopédico
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  materiais_e_equipamentos__hospitalar:
+    subcategory_name: Materiais e Equipamentos
+    category_name: Hospitalar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  medidor_de_glicose__aparelhos_e_monitores:
+    subcategory_name: Medidor de Glicose
+    category_name: Aparelhos e Monitores
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  minerais__vitaminas:
+    subcategory_name: Minerais
+    category_name: Vitaminas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  modelador_de_seio_e_adesivos__acessorios_de_beleza:
+    subcategory_name: Modelador de Seio e Adesivos
+    category_name: Acessórios de Beleza
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  monitor_de_pressao__aparelhos_e_monitores:
+    subcategory_name: Monitor de Pressão
+    category_name: Aparelhos e Monitores
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  mordedores__acessorios_para_bebes:
+    subcategory_name: Mordedores
+    category_name: Acessórios para Bebês
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: bebe_cuidados
+    list_columns:
+    - audience
+    - faixa_etaria_bebe
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      audience:
+        attribute_type: hard_filter
+      faixa_etaria_bebe:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  mordedores_e_chocalhos__acessorios_para_bebes:
+    subcategory_name: Mordedores e Chocalhos
+    category_name: Acessórios para Bebês
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: bebe_cuidados
+    list_columns:
+    - audience
+    - faixa_etaria_bebe
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      audience:
+        attribute_type: hard_filter
+      faixa_etaria_bebe:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  muleta_e_bengala__ortopedico:
+    subcategory_name: Muleta e Bengala
+    category_name: Ortopédico
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  multivitaminicos__vitaminas:
+    subcategory_name: Multivitamínicos
+    category_name: Vitaminas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  mundo_pet__casa_e_utilidades:
+    subcategory_name: Mundo Pet
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  munhequeira_e_cotoveleira__ortopedico:
+    subcategory_name: Munhequeira e Cotoveleira
+    category_name: Ortopédico
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  natural_e_vegano__desodorante:
+    subcategory_name: Natural e Vegano
+    category_name: Desodorante
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: desodorante
+    list_columns:
+    - forma_desodorante
+    - genero
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_desodorante:
+        attribute_type: hard_filter
+      genero:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.4
+    - 2.5
+  nutricosmeticos__suplementos:
+    subcategory_name: Nutricosméticos
+    category_name: Suplementos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  oleo_corporal__locoes_hidratantes_e_oleos_corporais:
+    subcategory_name: Óleo Corporal
+    category_name: Loções, Hidratantes e Óleos Corporais
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  oleos_e_finalizadores__hidratacao_e_tratamento_capilar:
+    subcategory_name: Óleos e Finalizadores
+    category_name: Hidratação e Tratamento Capilar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  oleos_e_hidratantes_infantis__cuidados_com_a_pele:
+    subcategory_name: Óleos e Hidratantes Infantis
+    category_name: Cuidados com a Pele
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  oleosos_e_misto__shampoo:
+    subcategory_name: Oleosos e Misto
+    category_name: Shampoo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  oleosos_e_misto__condicionador:
+    subcategory_name: Oleosos e Misto
+    category_name: Condicionador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  oleosos_e_misto__hidratacao_e_tratamento_capilar:
+    subcategory_name: Oleosos e Misto
+    category_name: Hidratação e Tratamento Capilar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  oleosos_e_misto__kit_shampoo_e_condicionador:
+    subcategory_name: Oleosos e Misto
+    category_name: Kit Shampoo e Condicionador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  olhos__maquiagens:
+    subcategory_name: Olhos
+    category_name: Maquiagens
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  omega3__vitaminas:
+    subcategory_name: Ômega3
+    category_name: Vitaminas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outras_bebidas__bebidas:
+    subcategory_name: Outras Bebidas
+    category_name: Bebidas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__testes:
+    subcategory_name: Outros
+    category_name: Testes
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__aparelhos_e_monitores:
+    subcategory_name: Outros
+    category_name: Aparelhos e Monitores
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__casa_e_utilidades:
+    subcategory_name: Outros
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__mercado:
+    subcategory_name: Outros
+    category_name: Mercado
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros:
+    subcategory_name: Outros
+    category_name: Outros
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__hidratacao_e_tratamento_capilar:
+    subcategory_name: Outros
+    category_name: Hidratação e Tratamento Capilar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__acessorios_para_cabelo:
+    subcategory_name: Outros
+    category_name: Acessórios para Cabelo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__esmalteria:
+    subcategory_name: Outros
+    category_name: Esmalteria
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__higiene_oral:
+    subcategory_name: Outros
+    category_name: Higiene Oral
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__banho:
+    subcategory_name: Outros
+    category_name: Banho
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__acessorios_de_beleza:
+    subcategory_name: Outros
+    category_name: Acessórios de Beleza
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__depilar_e_barbear:
+    subcategory_name: Outros
+    category_name: Depilar e Barbear
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__cuidado_intimo:
+    subcategory_name: Outros
+    category_name: Cuidado Íntimo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__cuidados_com_o_cabelo:
+    subcategory_name: Outros
+    category_name: Cuidados com o Cabelo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__alimentacao_infantil:
+    subcategory_name: Outros
+    category_name: Alimentação Infantil
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: bebe_cuidados
+    list_columns:
+    - audience
+    - faixa_etaria_bebe
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      audience:
+        attribute_type: hard_filter
+      faixa_etaria_bebe:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__amamentacao:
+    subcategory_name: Outros
+    category_name: Amamentação
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__cuidados_com_a_pele:
+    subcategory_name: Outros
+    category_name: Cuidados com a Pele
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__ortopedico:
+    subcategory_name: Outros
+    category_name: Ortopédico
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__saude_sexual:
+    subcategory_name: Outros
+    category_name: Saúde Sexual
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__hospitalar:
+    subcategory_name: Outros
+    category_name: Hospitalar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__suplementos:
+    subcategory_name: Outros
+    category_name: Suplementos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros__vitaminas:
+    subcategory_name: Outros
+    category_name: Vitaminas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros_acessorios__acessorios_para_bebes:
+    subcategory_name: Outros Acessórios
+    category_name: Acessórios para Bebês
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: bebe_cuidados
+    list_columns:
+    - audience
+    - faixa_etaria_bebe
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      audience:
+        attribute_type: hard_filter
+      faixa_etaria_bebe:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros_acessorios_para_cabelo__acessorios_para_cabelo:
+    subcategory_name: Outros Acessórios para Cabelo
+    category_name: Acessórios para Cabelo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros_dermocosmeticos__dermocosmeticos:
+    subcategory_name: Outros Dermocosméticos
+    category_name: Dermocosméticos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  outros_utensilios__utensilios_para_alimentacao:
+    subcategory_name: Outros Utensílios
+    category_name: Utensílios para Alimentação
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  oximetros__aparelhos_e_monitores:
+    subcategory_name: Oxímetros
+    category_name: Aparelhos e Monitores
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  panetones_e_chocotones__natal:
+    subcategory_name: Panetones e Chocotones
+    category_name: Natal
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  papelaria_e_livros__casa_e_utilidades:
+    subcategory_name: Papelaria e Livros
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: papel_lenco
+    list_columns:
+    - tipo_lenco
+    - tipo_folha
+    - metragem_norm
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      tipo_lenco:
+        attribute_type: soft_boost
+        boost_factor: 1.2
+      tipo_folha:
+        attribute_type: soft_boost
+        boost_factor: 1.2
+      metragem_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.2
+    quantity_ratio_bounds:
+    - 0.25
+    - 4.0
+  papinha__alimentacao_infantil:
+    subcategory_name: Papinha
+    category_name: Alimentação Infantil
+    top_k: 100
+    min_score: 0.51
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+    quantity_kind: mass
+    list_columns:
+    - tipo_papinha
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    config_overrides:
+      tipo_papinha:
+        attribute_type: soft_boost
+        boost_factor: 1.2
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+  para_corte__acessorios_para_cabelo:
+    subcategory_name: Para Corte
+    category_name: Acessórios para Cabelo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  para_massagem__locoes_hidratantes_e_oleos_corporais:
+    subcategory_name: Para Massagem
+    category_name: Loções, Hidratantes e Óleos Corporais
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  para_os_pes__desodorante:
+    subcategory_name: Para os Pés
+    category_name: Desodorante
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: desodorante
+    list_columns:
+    - forma_desodorante
+    - genero
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_desodorante:
+        attribute_type: hard_filter
+      genero:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.4
+    - 2.5
+  passador_de_fio__higiene_oral:
+    subcategory_name: Passador de Fio
+    category_name: Higiene Oral
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  pentes_e_escovas__acessorios_para_cabelo:
+    subcategory_name: Pentes e Escovas
+    category_name: Acessórios para Cabelo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  pos_sol__protetor_solar:
+    subcategory_name: Pós Sol
+    category_name: Protetor Solar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  pos_sol__protecao_solar:
+    subcategory_name: Pós Sol
+    category_name: Proteção Solar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  pos_barba__depilar_e_barbear:
+    subcategory_name: Pós-Barba
+    category_name: Depilar e Barbear
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  praia_e_piscina__casa_e_utilidades:
+    subcategory_name: Praia e Piscina
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  pre_treinos__suplementos:
+    subcategory_name: Pré-treinos
+    category_name: Suplementos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  preservativo__saude_sexual:
+    subcategory_name: Preservativo
+    category_name: Saúde Sexual
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  produtos_para_limpeza__casa_e_utilidades:
+    subcategory_name: Produtos para Limpeza
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  proteinas__suplementos:
+    subcategory_name: Proteínas
+    category_name: Suplementos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  protetor_diario__absorvente_diurno:
+    subcategory_name: Protetor Diário
+    category_name: Absorvente Diurno
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  protetor_e_pomada_para_seios__amamentacao:
+    subcategory_name: Protetor e Pomada para Seios
+    category_name: Amamentação
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  protetor_solar_infantil__cuidados_com_a_pele:
+    subcategory_name: Protetor Solar Infantil
+    category_name: Cuidados com a Pele
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  protetor_solar_para_o_corpo__protecao_solar:
+    subcategory_name: Protetor Solar para o Corpo
+    category_name: Proteção Solar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  protetor_solar_para_o_rosto__protecao_solar:
+    subcategory_name: Protetor Solar para o Rosto
+    category_name: Proteção Solar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  quadrado_e_disco__algodao:
+    subcategory_name: Quadrado e Disco
+    category_name: Algodão
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  quimicamente_tratados__condicionador:
+    subcategory_name: Quimicamente Tratados
+    category_name: Condicionador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  quimicamente_tratados__shampoo:
+    subcategory_name: Quimicamente Tratados
+    category_name: Shampoo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  quimicamente_tratados__kit_shampoo_e_condicionador:
+    subcategory_name: Quimicamente Tratados
+    category_name: Kit Shampoo e Condicionador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  quimicamente_tratados__hidratacao_e_tratamento_capilar:
+    subcategory_name: Quimicamente Tratados
+    category_name: Hidratação e Tratamento Capilar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  recipiente_para_leite_materno__amamentacao:
+    subcategory_name: Recipiente para Leite Materno
+    category_name: Amamentação
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  refrigerantes__bebidas:
+    subcategory_name: Refrigerantes
+    category_name: Bebidas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  removedor_de_esmalte__esmalteria:
+    subcategory_name: Removedor de Esmalte
+    category_name: Esmalteria
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  repelente_infantil__cuidados_com_a_pele:
+    subcategory_name: Repelente Infantil
+    category_name: Cuidados com a Pele
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  repelentes:
+    subcategory_name: Repelentes
+    category_name: Repelentes
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  repelentes_e_controle_de_pragas__casa_e_utilidades:
+    subcategory_name: Repelentes e Controle de Pragas
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  ressecados_e_secos__shampoo:
+    subcategory_name: Ressecados e Secos
+    category_name: Shampoo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  ressecados_e_secos__kit_shampoo_e_condicionador:
+    subcategory_name: Ressecados e Secos
+    category_name: Kit Shampoo e Condicionador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  ressecados_e_secos__condicionador:
+    subcategory_name: Ressecados e Secos
+    category_name: Condicionador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  ressecados_e_secos__hidratacao_e_tratamento_capilar:
+    subcategory_name: Ressecados e Secos
+    category_name: Hidratação e Tratamento Capilar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  roll_on__desodorante:
+    subcategory_name: Roll-on
+    category_name: Desodorante
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: desodorante
+    list_columns:
+    - forma_desodorante
+    - genero
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_desodorante:
+        attribute_type: hard_filter
+      genero:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.4
+    - 2.5
+  rolo__algodao:
+    subcategory_name: Rolo
+    category_name: Algodão
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: papel_lenco
+    list_columns:
+    - tipo_lenco
+    - tipo_folha
+    - metragem_norm
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      tipo_lenco:
+        attribute_type: soft_boost
+        boost_factor: 1.2
+      tipo_folha:
+        attribute_type: soft_boost
+        boost_factor: 1.2
+      metragem_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.2
+    quantity_ratio_bounds:
+    - 0.25
+    - 4.0
+  rolos__papel_higienico:
+    subcategory_name: Rolos
+    category_name: Papel Higiênico
+    top_k: 100
+    min_score: 0.51
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+    quantity_kind: count
+    list_columns:
+    - tipo_folha
+    - metragem_norm
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    config_overrides:
+      tipo_folha:
+        attribute_type: soft_boost
+        boost_factor: 1.2
+      metragem_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.2
+  rosto__dermocosmeticos:
+    subcategory_name: Rosto
+    category_name: Dermocosméticos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  rosto__protecao_solar:
+    subcategory_name: Rosto
+    category_name: Proteção Solar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  rosto__maquiagens:
+    subcategory_name: Rosto
+    category_name: Maquiagens
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  roupa_intima_descartavel__cuidado_intimo:
+    subcategory_name: Roupa Íntima Descartável
+    category_name: Cuidado Íntimo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  roupas_e_calcados__casa_e_utilidades:
+    subcategory_name: Roupas e Calçados
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  roupas_e_calcados__hospitalar:
+    subcategory_name: Roupas e Calçados
+    category_name: Hospitalar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  sabonete_infantil__cuidados_com_a_pele:
+    subcategory_name: Sabonete Infantil
+    category_name: Cuidados com a Pele
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: sabonete
+    list_columns:
+    - forma_sabonete
+    - tipo_sabonete
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_sabonete:
+        attribute_type: hard_filter
+      tipo_sabonete:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  sabonete_intimo__cuidado_intimo:
+    subcategory_name: Sabonete Íntimo
+    category_name: Cuidado Íntimo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: sabonete
+    list_columns:
+    - forma_sabonete
+    - tipo_sabonete
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_sabonete:
+        attribute_type: hard_filter
+      tipo_sabonete:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  sabonetes__banho:
+    subcategory_name: Sabonetes
+    category_name: Banho
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: sabonete
+    list_columns:
+    - forma_sabonete
+    - tipo_sabonete
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_sabonete:
+        attribute_type: hard_filter
+      tipo_sabonete:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  salgadinho__mercado:
+    subcategory_name: Salgadinho
+    category_name: Mercado
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  seringas__agulhas_e_seringas:
+    subcategory_name: Seringas
+    category_name: Agulhas e Seringas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  shampoo_e_modeladores_de_barba__depilar_e_barbear:
+    subcategory_name: Shampoo e Modeladores de Barba
+    category_name: Depilar e Barbear
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  shampoo_infantil__cuidados_com_o_cabelo:
+    subcategory_name: Shampoo Infantil
+    category_name: Cuidados com o Cabelo
+    top_k: 100
+    min_score: 0.51
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+  snacks__mercado:
+    subcategory_name: Snacks
+    category_name: Mercado
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  solucao_micelar__locoes_hidratantes_e_oleos_corporais:
+    subcategory_name: Solução Micelar
+    category_name: Loções, Hidratantes e Óleos Corporais
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  soro_fisiologico__higienizacao:
+    subcategory_name: Soro Fisiológico
+    category_name: Higienização
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  sorvete__mercado:
+    subcategory_name: Sorvete
+    category_name: Mercado
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  sorvetes_e_acais__mercado:
+    subcategory_name: Sorvetes e Açaís
+    category_name: Mercado
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  sucos__bebidas:
+    subcategory_name: Sucos
+    category_name: Bebidas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: mass
+    template: alimentos_bebidas
+    list_columns:
+    - forma_bebida
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      forma_bebida:
+        attribute_type: hard_filter
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  talco__troca_de_fralda:
+    subcategory_name: Talco
+    category_name: Troca de Fralda
+    top_k: 100
+    min_score: 0.51
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - shortName
+  talheres_e_pratinhos__utensilios_para_alimentacao:
+    subcategory_name: Talheres e Pratinhos
+    category_name: Utensílios para Alimentação
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  termometros__aparelhos_e_monitores:
+    subcategory_name: Termômetros
+    category_name: Aparelhos e Monitores
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  teste_gravidez_e_fertilidade__testes:
+    subcategory_name: Teste Gravidez e Fertilidade
+    category_name: Testes
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  teste_hiv__testes:
+    subcategory_name: Teste HIV
+    category_name: Testes
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  teste_mapeamento_genetico__testes:
+    subcategory_name: Teste Mapeamento Genético
+    category_name: Testes
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  tipoia_e_colar_cervical__ortopedico:
+    subcategory_name: Tipóia e Colar Cervical
+    category_name: Ortopédico
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  todos_os_tipos__shampoo:
+    subcategory_name: Todos os Tipos
+    category_name: Shampoo
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  todos_os_tipos__condicionador:
+    subcategory_name: Todos os Tipos
+    category_name: Condicionador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  todos_os_tipos__kit_shampoo_e_condicionador:
+    subcategory_name: Todos os Tipos
+    category_name: Kit Shampoo e Condicionador
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: higiene
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+      productType:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+      purpose:
+        attribute_type: soft_boost
+        boost_factor: 1.1
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  todos_os_tipos__hidratacao_e_tratamento_capilar:
+    subcategory_name: Todos os Tipos
+    category_name: Hidratação e Tratamento Capilar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  tonalizante__tonalizante_e_coloracao:
+    subcategory_name: Tonalizante
+    category_name: Tonalizante e Coloração
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  tonico__hidratacao_e_tratamento_capilar:
+    subcategory_name: Tônico
+    category_name: Hidratação e Tratamento Capilar
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  toucas__banho:
+    subcategory_name: Toucas
+    category_name: Banho
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  unhas_posticas__esmalteria:
+    subcategory_name: Unhas Postiças
+    category_name: Esmalteria
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  unissex__colonia_e_perfume:
+    subcategory_name: Unissex
+    category_name: Colônia e Perfume
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  utensilios_para_cozinha__casa_e_utilidades:
+    subcategory_name: Utensílios para Cozinha
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  utilidades_diversos__casa_e_utilidades:
+    subcategory_name: Utilidades Diversos
+    category_name: Casa e Utilidades
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  vaselina__antissepticos:
+    subcategory_name: Vaselina
+    category_name: Antissépticos
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  vibrador_e_estimulador__saude_sexual:
+    subcategory_name: Vibrador e Estimulador
+    category_name: Saúde Sexual
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  vitamina_bs__vitaminas:
+    subcategory_name: Vitamina Bs
+    category_name: Vitaminas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  vitamina_c__vitaminas:
+    subcategory_name: Vitamina C
+    category_name: Vitaminas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  vitamina_d__vitaminas:
+    subcategory_name: Vitamina D
+    category_name: Vitaminas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
+  vitamina_e__vitaminas:
+    subcategory_name: Vitamina E
+    category_name: Vitaminas
+    top_k: 100
+    min_score: 0.51
+    quantity_kind: count
+    template: default
+    list_columns:
+    - brandName
+    - quantity_norm
+    - packagingName
+    - productType
+    - purpose
+    - additionalInfo
+    - shortName
+    - product_description
+    config_overrides:
+      quantity_norm:
+        attribute_type: soft_boost
+        boost_factor: 1.15
+    quantity_ratio_bounds:
+    - 0.5
+    - 2.0
