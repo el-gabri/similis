@@ -1,6 +1,6 @@
 # Similis — Sugestão de Substitutos por Similaridade Semântica
 
-Pipeline de recomendação de **produtos substitutos** para o catálogo Farma do iFood (Groceries Ops). Para cada EAN de uma subcategoria, gera uma lista ranqueada de EANs substitutos com base em similaridade semântica de embeddings (BGE-M3), refinada por regras de negócio configuráveis por subcategoria (filtros rígidos, boosts e faixa de quantidade).
+Pipeline de recomendação de **produtos substitutos** para um catálogo Farma de e-commerce. Para cada EAN de uma subcategoria, gera uma lista ranqueada de EANs substitutos com base em similaridade semântica de embeddings (BGE-M3), refinada por regras de negócio configuráveis por subcategoria (filtros rígidos, boosts e faixa de quantidade).
 
 > **Status:** _______________ (dev / piloto / produção)
 > **Owner:** Gabriel Bonuccelli Heringer Lisboa — Varejo DS
