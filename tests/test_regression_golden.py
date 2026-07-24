@@ -3,7 +3,10 @@
 
 As fixtures (tests/fixtures/*.json) capturam o comportamento de referência do
 pipeline normalize -> recommend. Qualquer refactor que NÃO pretenda mudar
-resultados deve manter estes testes verdes byte a byte. Mudança INTENCIONAL de
+resultados deve manter o RANKING idêntico: mesmos EANs, mesma ordem, mesmos
+ranks. A ``relevance`` é comparada com tolerância (:data:`_REL_TOL`) porque o
+produto interno FAISS/BLAS difere de ~1 ulp entre versões de biblioteca e de
+CPU — o 6º dígito não é contrato, o ranking é. Mudança INTENCIONAL de
 comportamento => regenerar as fixtures (tests/fixtures/generate_fixtures.py) na
 MESMA revisão, com bump de MODEL_VERSION e diff revisado no PR.
 """
@@ -16,6 +19,10 @@ import numpy as np
 
 _FIXTURES = os.path.join(os.path.dirname(__file__), "fixtures")
 sys.path.insert(0, _FIXTURES)
+
+# Tolerância da relevance (ver docstring do módulo). Estrutura — EANs, ordem,
+# rank — permanece comparada por igualdade exata.
+_REL_TOL = 1e-5
 
 from generate_fixtures import NAMES, build_df, make_config  # noqa: E402
 
@@ -76,7 +83,57 @@ class TestRankerGolden(unittest.TestCase):
                 ]
                 for r in recs.to_dict("records")
             }
-            self.assertEqual(got, golden[name], f"cenário {name} divergiu do golden")
+            self._assert_ranking_matches(got, golden[name], name)
+
+    def _assert_ranking_matches(self, got, expected, scenario):
+        self.assertEqual(
+            set(got), set(expected), f"cenário {scenario}: origens divergiram"
+        )
+        for origem, exp_list in expected.items():
+            got_list = got[origem]
+            ctx = f"cenário {scenario}, origem {origem}"
+
+            if not exp_list:
+                self.assertEqual(got_list, [], f"{ctx}: esperava lista vazia")
+                continue
+
+            got_rels = [s["relevance"] for s in got_list]
+            exp_rels = [s["relevance"] for s in exp_list]
+
+            # (a) É um ranking próprio: ranks contíguos 1..N, ordenado por
+            # relevance decrescente.
+            self.assertEqual(
+                [s["rank"] for s in got_list],
+                list(range(1, len(got_list) + 1)),
+                f"{ctx}: ranks não são 1..N contíguos",
+            )
+            self.assertEqual(
+                got_rels, sorted(got_rels, reverse=True), f"{ctx}: não decrescente"
+            )
+
+            # (b) Perfil de scores idêntico dentro da tolerância (posição a
+            # posição). Comprova que o pipeline calculou os MESMOS scores; a
+            # diferença de ~1 ulp do produto interno FAISS/BLAS entre libs/CPUs
+            # fica sob a tolerância.
+            self.assertEqual(
+                len(got_list), len(exp_list), f"{ctx}: tamanho da lista divergiu"
+            )
+            for i, (g, e) in enumerate(zip(got_rels, exp_rels)):
+                self.assertAlmostEqual(
+                    g, e, delta=_REL_TOL,
+                    msg=f"{ctx}, posição {i}: perfil de score divergiu",
+                )
+
+            # (c) EANs ACIMA do nível de corte batem exatamente. No nível de
+            # corte, um grupo de itens EMPATADOS pode ser truncado pelo top-K —
+            # qual deles sobra depende da ordem em que o índice devolve os
+            # empates. Contrato: mesmo conjunto acima do corte + mesmo tamanho
+            # total ⇒ o grupo empatado difere no máximo em quem preencheu a
+            # última vaga (não é regressão).
+            thresh = min(exp_rels)
+            core_got = {s["ean"] for s in got_list if s["relevance"] > thresh + _REL_TOL}
+            core_exp = {s["ean"] for s in exp_list if s["relevance"] > thresh + _REL_TOL}
+            self.assertEqual(core_got, core_exp, f"{ctx}: EANs acima do corte divergiram")
 
 
 if __name__ == "__main__":

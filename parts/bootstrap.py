@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any, Dict
 
 import yaml
@@ -43,7 +43,7 @@ def bootstrap_config_table(
 
     subs = subcategories or FARMA_SUBCATEGORIES_DEFAULT
     rows = []
-    now = datetime.utcnow()
+    now = datetime.now(timezone.utc)
 
     for sub in subs:
         entry = list_ids.get(sub)

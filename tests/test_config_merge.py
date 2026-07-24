@@ -105,6 +105,46 @@ class TestConfigMerge(unittest.TestCase):
         self.assertEqual(cfg.candidate_pool_multiplier, 3)
         self.assertTrue(cfg.config_hash)
 
+    def test_delta_divergent_scalar_raises(self):
+        # Duas linhas de atributo do MESMO slug com top_k divergente: antes a
+        # última (ordem não garantida) vencia silenciosamente; agora falha alto.
+        delta_rows = [
+            {
+                "subcategoria": "fraldas__troca_de_fralda",
+                "subcategory_name": "Fraldas",
+                "attribute": "size_norm",
+                "attribute_type": "hard_filter",
+                "top_k": 30,
+                "min_score": 0.6,
+                "active": True,
+            },
+            {
+                "subcategoria": "fraldas__troca_de_fralda",
+                "subcategory_name": "Fraldas",
+                "attribute": "brandName",
+                "attribute_type": "text_only",
+                "top_k": 99,  # divergente
+                "min_score": 0.6,
+                "active": True,
+            },
+        ]
+        loader = self._loader(_FakeSpark(delta_rows), {"list_ids": {}})
+        with self.assertRaises(ValueError):
+            loader.get("fraldas__troca_de_fralda")
+
+    def test_delta_consistent_scalars_across_rows_ok(self):
+        # Várias linhas com o MESMO valor escalar (caso normal do bootstrap):
+        # não deve levantar e deve resolver o valor comum.
+        delta_rows = [
+            dict(subcategoria="x", subcategory_name="X", attribute="a",
+                 attribute_type="text_only", top_k=42, min_score=0.5, active=True),
+            dict(subcategoria="x", subcategory_name="X", attribute="b",
+                 attribute_type="text_only", top_k=42, min_score=0.5, active=True),
+        ]
+        cfg = self._loader(_FakeSpark(delta_rows), {"list_ids": {}}).get("x")
+        self.assertEqual(cfg.top_k, 42)
+        self.assertEqual([r.attribute for r in cfg.rules], ["a", "b"])
+
     def test_yaml_when_delta_empty(self):
         infos = {
             "list_ids": {

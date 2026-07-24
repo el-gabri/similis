@@ -5,7 +5,12 @@ plan.md
 __pycache__/
 *.pyc
 .pytest_cache/
+.ruff_cache/
 infos.generated.yaml
 /tests/test_synthetics_desodorante.py
 /docs/
 *.bak
+
+# --- IDE ---
+.idea/
+.vscode/

@@ -8,7 +8,6 @@ import pandas as pd
 
 from parts.config_loader import (
     _DEFAULT_UNIVERSE_EXCLUSIONS,
-    AttributeRule,
     SubcategoryConfig,
     build_config_from_infos,
 )

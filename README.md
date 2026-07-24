@@ -32,10 +32,10 @@ Pipeline de recomendação de **produtos substitutos** para um catálogo Farma d
 ## 1. Visão geral da arquitetura
 
 ```
-                       ┌────────────────────────────────────────────────┐
-                       │ groceries_ops.similis.config_subcategoria      │
-                       │ (Delta, populada via mode=bootstrap)           │
-                       └──────────────┬─────────────────────────────────┘
+                       ┌──────────────────────────────────────────────────────────┐
+                       │ groceries_ops.similis.config_atributos_subcategoria      │
+                       │ (Delta, populada via mode=bootstrap)                     │
+                       └──────────────┬───────────────────────────────────────────┘
                                       │  fallback: infos.yaml
                                       ▼
  products_categorization ──┐   ┌─────────────┐
@@ -116,8 +116,9 @@ src/similis/
 │   ├── create_tables.sql        # DDL das tabelas de saída
 │   └── discover_metadata_keys.sql  # Cobertura das keys do skus_metadata por subcat
 ├── notebooks/
-│   └── local_test_similis_2.ipynb  # Teste local (CSV Mamãe e Bebê), sem Spark
-└── resources/similis.yml        # Definição do job no Databricks Asset Bundle
+│   ├── databricks_similis.ipynb  # Inspeção interativa + diagnóstico (§9.2)
+│   └── similis_judge.py          # Wrapper do LLM-as-judge (impl. em parts/judge.py)
+└── resources/similis.yml         # Definição do job no DAB (não versionado — ver §13)
 ```
 
 **Para adicionar um atributo sintético novo:** criar/editar UM módulo em
@@ -182,9 +183,9 @@ O "explode" do JSON: **uma linha por par (origem, substituto)**, em ordem de ran
 
 > EANs **sem nenhuma sugestão** não geram linha na flat (não há par). Para auditá-los, use a aninhada com `n_sugestoes = 0`.
 
-### 4.3 `groceries_ops.similis.config_subcategoria`
+### 4.3 `groceries_ops.similis.config_atributos_subcategoria`
 
-Config "viva" em Delta (1 linha por par subcategoria × atributo), populada via `mode=bootstrap`. Colunas: `subcategoria`, `subcategory_name`, `category_name`, `attribute`, `attribute_type`, `weight`, `boost_factor`, `top_k`, `min_score`, `quantity_ratio_bounds` (JSON string), `active`, `updated_by`, `updated_at`.
+Config "viva" em Delta (1 linha por par subcategoria × atributo), populada via `mode=bootstrap`. Colunas: `subcategoria`, `subcategory_name`, `category_name`, `attribute`, `attribute_type`, `weight`, `boost_factor`, `top_k`, `min_score`, `quantity_ratio_bounds` (JSON string), `quantity_kind`, `candidate_pool_multiplier`, `active`, `updated_by`, `updated_at`.
 
 > O `bootstrap` cobre **todas** as subcategorias do inventário (`SUBCATEGORIES` em `parts/constants.py`): as curadas usam a config do `infos.yaml`; as demais recebem baseline por template automaticamente. Recria a tabela com `overwriteSchema=true`, então a coluna `category_name` aparece sozinha na próxima execução.
 
@@ -248,7 +249,7 @@ Para regenerar o inventário: rode a query "INVENTÁRIO" de
 
 O `ConfigLoader` resolve a config nesta ordem:
 
-1. **Delta** (`config_subcategoria`, linhas `active = true`) — fonte primária em produção.
+1. **Delta** (`config_atributos_subcategoria`, linhas `active = true`) — fonte primária em produção.
 2. **`infos.yaml`** — fallback quando a tabela está vazia/indisponível, e complemento de campos ausentes no Delta (`subcategory_name`, `category_name`, `quantity_ratio_bounds`).
 3. **Template** (`parts/config_templates.py` via `subcategory_policy`) — baseline automático para qualquer slug do inventário sem entrada no Delta nem no `infos.yaml`. `category_name` também é completado a partir de `SUBCATEGORIES` quando ausente nas fontes acima.
 
@@ -279,7 +280,7 @@ list_ids:
         boost_factor: 1.15
 ```
 
-**Defaults implícitos** (em `parts/constants.py`): `attribute_type: text_only`, `weight: 1.0` (atributo repetido 3× no `text_canon`; `repeat = round(weight × 3)`), `boost_factor: 1.0` (neutro), `top_k: 50`, `min_score: 0.50`.
+**Defaults implícitos** (em `parts/constants.py`): `attribute_type: text_only`, `weight: 1.0` (atributo repetido 3× no `text_canon`; `repeat = round(weight × 3)`), `boost_factor: 1.0` (neutro), `top_k: 100` (`DEFAULT_TOP_K`), `min_score: 0.51` (`DEFAULT_MIN_SCORE`).
 
 **`quantity_ratio_bounds`** descarta candidatos cuja quantidade esteja fora de `[lo×origem, hi×origem]` (ex.: fralda 96un nunca sugere 10un). A comparação só ocorre quando as quantidades de origem e candidato são parseáveis e da **mesma dimensão** — unidades de massa, volume e contagem são convertidas para forma canônica (kg→g, l→ml, unidades→un) antes da comparação; unidades desconhecidas exigem igualdade literal. Quando não dá para comparar, o candidato é **mantido** (conservador).
 
@@ -341,11 +342,11 @@ databricks bundle run similis_farma --target dev
 databricks bundle run similis_farma --target dev \
   --params subcategories='["fraldas", "lencos_umedecidos"]'
 
-# bootstrap: (re)popula config_subcategoria a partir do infos.yaml
+# bootstrap: (re)popula config_atributos_subcategoria a partir do infos.yaml
 databricks bundle run similis_farma --target dev --params mode=bootstrap
 ```
 
-Argumentos posicionais do `main.py`: `subcategories` (lista ou string), `mode` (`predict` | `bootstrap`), `top_k` (default 50). O bootstrap sempre repovoa **todas** as subcategorias Farma (overwrite completo da tabela de config, evita estado parcial no `for_each`).
+Argumentos do `main.py` (flags `--mode/--subcategories/--top-k` ou posicional legado `<subcategories> <mode> <top_k>`): `subcategories` (lista JSON, CSV ou slug único), `mode` (`predict` | `predict_staging` | `predict_all` | `predict_all_staging` | `bootstrap` | `generate_config`), `top_k` (default `DEFAULT_TOP_K = 100`). O bootstrap sempre repovoa **todas** as subcategorias Farma (overwrite completo da tabela de config, evita estado parcial no `for_each`).
 
 ### 9.2 Notebook interativo (`databricks_similis.ipynb`)
 
@@ -360,7 +361,7 @@ Para inspeção qualitativa, tuning de config e diagnóstico. Cluster sugerido: 
 
 ### 9.3 Teste local (sem Spark)
 
-`src/similis/notebooks/local_test_similis_2.ipynb` roda o pipeline sobre o CSV de Mamãe e Bebê (`similis_2.csv`), útil para iterar no normalizer/ranker sem cluster. O ranker tem fallback numpy quando `faiss-cpu` não está disponível.
+A suíte de testes (`pytest tests/`) roda o pipeline `normalize -> recommend -> prepare_recommendations_output` **sem Spark nem faiss** (o ranker tem fallback numpy e o writer separa a parte Spark-free), servindo como caminho de iteração local no normalizer/ranker. Um notebook de teste sobre CSV pode ser adicionado em `notebooks/` seguindo o mesmo caminho Spark-free.
 
 ### 9.4 Dependências (pinadas no notebook e no `resources/similis.yml`)
 

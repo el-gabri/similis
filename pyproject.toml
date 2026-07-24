@@ -1,0 +1,33 @@
+# Configuração de tooling (lint + testes). NÃO declara build-system/[project]
+# ainda: o empacotamento em src/similis/ (que removeria os sys.path.insert de
+# main.py/conftest/notebook) é a etapa 2.1 do plan.md — coordenar com o bundle
+# DAB antes. Deps pinadas em requirements.txt.
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+# Núcleo do runtime + testes; o infos.yaml e notebooks ficam fora do lint.
+extend-exclude = ["notebooks", "*.ipynb"]
+
+[tool.ruff.lint]
+# Rede de segurança de alto valor: erros reais (E/W) e pyflakes (F — pega
+# imports/variáveis não usados, nomes indefinidos, redefinições). Deliberadamente
+# fora por ora (tightening incremental — ver plan.md):
+#   - I (isort): a organização de imports foi curada à mão (ex.: a ordem
+#     SEMÂNTICA em parts/synthetics/__init__.py define a ordem de cômputo);
+#     reordenar automático brigaria com isso e ainda partiria imports agrupados.
+#   - UP/B: ~180 achados de estilo pré-existente (o cabeçalho
+#     ``# -*- coding: utf-8 -*-`` em todo arquivo etc.), exigiriam reescrita ampla.
+select = ["E", "F", "W"]
+ignore = [
+    "E501",  # comprimento de linha: papel do formatter, não deve falhar CI
+]
+
+[tool.ruff.lint.per-file-ignores]
+# main.py importa após o sys.path.insert (shim até o empacotamento 2.1).
+"main.py" = ["E402"]
+"tests/*" = ["E402"]

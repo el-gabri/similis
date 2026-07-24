@@ -226,9 +226,12 @@ def _partial_from_infos_entry(infos_entry: Dict[str, Any]) -> Dict[str, Any]:
         out["subcategory_name"] = str(infos_entry["subcategory_name"]).strip()
     if infos_entry.get("category_name"):
         out["category_name"] = str(infos_entry["category_name"]).strip()
-    if infos_entry.get("top_k"):
+    # ``is not None`` (não truthiness): ``top_k: 0``/``min_score: 0`` são valores
+    # explícitos que o autor pode usar em config de teste; truthiness os
+    # descartava silenciosamente e caía no default.
+    if infos_entry.get("top_k") is not None:
         out["top_k"] = int(infos_entry["top_k"])
-    if infos_entry.get("min_score"):
+    if infos_entry.get("min_score") is not None:
         out["min_score"] = float(infos_entry["min_score"])
     bounds = _coerce_ratio_bounds(infos_entry.get("quantity_ratio_bounds"))
     if bounds is not None:
@@ -267,29 +270,43 @@ def _partial_from_delta(spark, subcategoria: str) -> Optional[Dict[str, Any]]:
 
     out: Dict[str, Any] = {}
     rules: List[AttributeRule] = []
+
+    # Campos escalares: 1 valor lógico por slug, mas replicado em CADA linha de
+    # atributo. Antes cada linha sobrescrevia o campo e a ÚLTIMA vencia — e
+    # ``collect()`` sem ``orderBy`` não tem ordem garantida, então uma edição
+    # manual inconsistente na tabela produzia config não determinística. Agora o
+    # PRIMEIRO valor não-nulo vence e divergências entre linhas falham alto.
+    _SCALAR_COERCERS = {
+        "subcategory_name": lambda v: str(v).strip(),
+        "category_name": lambda v: str(v).strip(),
+        "top_k": lambda v: int(v),
+        "min_score": lambda v: float(v),
+        "quantity_kind": lambda v: str(v).strip().lower(),
+        "candidate_pool_multiplier": lambda v: max(1, int(v)),
+        "quantity_ratio_bounds": _coerce_ratio_bounds,
+    }
+
+    def _set_scalar(key: str, raw: Any):
+        if raw is None or (isinstance(raw, str) and not raw.strip()):
+            return
+        value = _SCALAR_COERCERS[key](raw)
+        if value is None:  # coerção rejeitou (ex.: bounds inválido)
+            return
+        if key in out and out[key] != value:
+            raise ValueError(
+                f"Config Delta de {subcategoria!r} inconsistente: {key} tem "
+                f"valores divergentes entre linhas ({out[key]!r} vs {value!r}). "
+                f"Corrija a tabela {CONFIG_TABLE} (1 valor por slug)."
+            )
+        out[key] = value
+
     for row in rows:
         r = row.asDict() if hasattr(row, "asDict") else dict(row)
         attr = r.get("attribute")
         if not attr:
             continue
-        if r.get("subcategory_name"):
-            out["subcategory_name"] = str(r["subcategory_name"]).strip()
-        if r.get("category_name"):
-            out["category_name"] = str(r["category_name"]).strip()
-        if r.get("top_k") is not None:
-            out["top_k"] = int(r["top_k"])
-        if r.get("min_score") is not None:
-            out["min_score"] = float(r["min_score"])
-        if r.get("quantity_ratio_bounds") is not None:
-            bounds = _coerce_ratio_bounds(r["quantity_ratio_bounds"])
-            if bounds is not None:
-                out["quantity_ratio_bounds"] = bounds
-        if r.get("quantity_kind"):
-            out["quantity_kind"] = str(r["quantity_kind"]).strip().lower()
-        if r.get("candidate_pool_multiplier") is not None:
-            out["candidate_pool_multiplier"] = max(
-                1, int(r["candidate_pool_multiplier"])
-            )
+        for key in _SCALAR_COERCERS:
+            _set_scalar(key, r.get(key))
         rules.append(
             AttributeRule(
                 attribute=str(attr),

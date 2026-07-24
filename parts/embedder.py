@@ -166,6 +166,18 @@ class BgeM3Embedder:
 
         out = np.stack(embeddings_list).astype(np.float32)
 
+        # 100% de cache hit: o parquet em disco já contém todos os pares
+        # (ean, text_hash) do universo atual — reescrevê-lo só gastaria I/O e,
+        # pior, ENCOLHERIA o cache para o universo corrente (EANs que saíram
+        # temporariamente do catálogo seriam descartados e recomputados ao
+        # voltar). Nada novo a persistir ⇒ não escreve.
+        if not to_encode_texts:
+            logger.info(
+                "%s: cache completo (%d hits), sem reescrita.",
+                subcategoria, n_cached_hits,
+            )
+            return out
+
         cache_rows = pd.DataFrame(
             {
                 "ean": eans,

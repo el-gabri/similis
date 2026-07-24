@@ -12,7 +12,7 @@ from __future__ import annotations
 
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import List, Optional, Tuple
 
 import pandas as pd
@@ -136,7 +136,11 @@ def prepare_recommendations_output(
     product_name} — chaves extras do ranker são descartadas aqui para
     proteger o contrato do downstream.
     """
-    run_date = run_date or datetime.today().strftime("%Y-%m-%d")
+    # UTC explícito: alinha a partição ``date`` ao ``current_date()`` dos
+    # snapshots de entrada e evita depender do fuso do driver. O chamador
+    # (main.run_many) já computa a data UMA vez e a repassa — este fallback só
+    # vale para uso interativo/testes.
+    run_date = run_date or datetime.now(timezone.utc).strftime("%Y-%m-%d")
     out = recs_df.copy()
     out["subcategoria"] = subcategoria_nested or subcategoria
     # Slug da categoria: só a flat consome; a aninhada é recortada por

@@ -28,6 +28,18 @@ except ImportError:
     faiss = None
     _HAS_FAISS = False
 
+# Casas decimais do arredondamento da relevance. É contrato: o mesmo valor é
+# usado no score por par e na renormalização final da rodada.
+_RELEVANCE_DECIMALS = 6
+
+
+def _l2_normalize(arr: np.ndarray) -> np.ndarray:
+    """Normaliza L2 por linha (float32, contíguo); linha nula fica nula."""
+    arr = np.ascontiguousarray(arr.astype(np.float32))
+    norms = np.linalg.norm(arr, axis=1, keepdims=True)
+    norms[norms == 0] = 1.0
+    return arr / norms
+
 
 class _NumpyFlatIPIndex:
     """Fallback quando faiss-cpu não está instalado (ex.: testes locais)."""
@@ -44,10 +56,7 @@ class _NumpyFlatIPIndex:
 
 
 def _build_partition_index(vecs: np.ndarray):
-    vecs = np.ascontiguousarray(vecs.astype(np.float32))
-    norms = np.linalg.norm(vecs, axis=1, keepdims=True)
-    norms[norms == 0] = 1.0
-    vecs = vecs / norms
+    vecs = _l2_normalize(vecs)
     if _HAS_FAISS:
         dim = vecs.shape[1]
         index = faiss.IndexFlatIP(dim)
@@ -61,10 +70,7 @@ def _search_index(index, query: np.ndarray, k: int):
     if _HAS_FAISS:
         faiss.normalize_L2(q)
         return index.search(q, k)
-    norms = np.linalg.norm(q, axis=1, keepdims=True)
-    norms[norms == 0] = 1.0
-    q = q / norms
-    return index.search(q, k)
+    return index.search(_l2_normalize(q), k)
 
 
 def _col_name(df: pd.DataFrame, attr: str) -> Optional[str]:
@@ -233,7 +239,9 @@ def recommend(
             else:
                 keep = relevance >= min_score
             if keep:
-                candidates.append({"ean": cand_ean, "relevance": round(relevance, 6)})
+                candidates.append(
+                    {"ean": cand_ean, "relevance": round(relevance, _RELEVANCE_DECIMALS)}
+                )
 
         candidates.sort(key=lambda x: x["relevance"], reverse=True)
         for rank, item in enumerate(candidates[:top_k], start=1):
@@ -254,6 +262,8 @@ def recommend(
         if max_relevance > 0:
             for r in results:
                 for c in r["sugestoes"]:
-                    c["relevance"] = round(c["relevance"] / max_relevance, 6)
+                    c["relevance"] = round(
+                        c["relevance"] / max_relevance, _RELEVANCE_DECIMALS
+                    )
 
     return pd.DataFrame(results)

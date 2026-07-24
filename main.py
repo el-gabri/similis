@@ -23,6 +23,7 @@ import logging
 import os
 import sys
 from dataclasses import dataclass
+from datetime import datetime, timezone
 
 import yaml
 
@@ -201,6 +202,7 @@ def run_predict(
     output_target: str = "prod",
     loader: ConfigLoader = None,
     embedder: BgeM3Embedder = None,
+    run_date: str = None,
 ):
     assert_subcategory_allowed(subcategory)
     loader = loader or ConfigLoader(spark, INFOS_PATH, top_k_default=top_k_default)
@@ -251,6 +253,7 @@ def run_predict(
         recommendations_table=recommendations_table,
         recommendations_flat_table=recommendations_flat_table,
         category_name=config.category_name,
+        run_date=run_date,
         # Aninhada mantém o slug legado histórico (subcategory_name); a flat
         # segue com o slug legado + coluna categoria.
         subcategoria_nested=nested_subcategoria(config.subcategory_name),
@@ -261,6 +264,10 @@ def run_predict(
 def run_many(spark, subcategories: list, top_k_default: int, output_target: str = "prod"):
     loader = ConfigLoader(spark, INFOS_PATH, top_k_default=top_k_default)
     embedder = BgeM3Embedder()
+    # Data da rodada computada UMA vez: uma execução longa (várias subcategorias)
+    # pode atravessar a meia-noite UTC; sem isso, as primeiras subcategorias
+    # cairiam numa partição ``date`` e as últimas em outra.
+    run_date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     for subcategory in subcategories:
         logger.info("=== Similis predict: %s ===", subcategory)
         run_predict(
@@ -270,6 +277,7 @@ def run_many(spark, subcategories: list, top_k_default: int, output_target: str 
             output_target=output_target,
             loader=loader,
             embedder=embedder,
+            run_date=run_date,
         )
 
 
